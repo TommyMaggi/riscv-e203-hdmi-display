@@ -1,0 +1,35 @@
+# Simulation outputs (very large)
+*.vcd
+*.lxt
+*.fst
+*.out
+sim/waveout*
+sim/wave*
+
+# Icarus Verilog compiled testbenches (extension-less binaries)
+rtl/ip/top_module
+rtl/ip/splitter_tb
+rtl/ip/color_bar_hor
+
+# Vendor simulation library (copy from your Gowin EDA install, see README)
+sim/gowin_sim_lib/*.v
+
+# Firmware build outputs (ram.hex is kept as a prebuilt image)
+firmware/**/Debug/**/*.o
+firmware/**/Debug/**/*.d
+firmware/**/Debug/*.elf
+firmware/**/Debug/*.bin
+firmware/**/Debug/*.map
+firmware/**/Debug/*.siz
+firmware/**/Debug/*.bak
+firmware/**/Debug/makehex64
+firmware/**/Debug/makehex64.exe
+
+# Gowin EDA outputs / per-user files
+gowin_prj/impl/
+*.gprj.user
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
